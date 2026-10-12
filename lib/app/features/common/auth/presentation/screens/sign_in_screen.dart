@@ -1,10 +1,10 @@
 import 'package:doctor_hunt/app/core/router/app_route.dart';
 import 'package:doctor_hunt/app/core/themes/app_colors.dart';
-import 'package:doctor_hunt/app/core/utils/app_string.dart';
 import 'package:doctor_hunt/app/core/widgets/app_background.dart';
 import 'package:doctor_hunt/app/core/widgets/text_form_field_widget.dart';
-import 'package:doctor_hunt/app/features/auth/presentation/widgets/auth_widget.dart';
-import 'package:doctor_hunt/app/features/auth/presentation/widgets/reset_password_widget.dart';
+import 'package:doctor_hunt/app/features/common/auth/presentation/widgets/auth_widget.dart';
+import 'package:doctor_hunt/app/features/common/auth/presentation/widgets/reset_password_widget.dart';
+import 'package:doctor_hunt/translations/strings.g.dart';
 import 'package:flutter/material.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -23,15 +23,15 @@ class _SignInScreenState extends State<SignInScreen> {
         child: Center(
           
           child: AuthWidget(
-            title: AppStrings.signInTitle,
-            subtitle: AppStrings.signUpSubtitle,
+            title: t.auth.signInTitle,
+            subtitle: t.auth.signUpSubtitle,
             textFields: [
               TextFormFieldWidget(
-                hintText: AppStrings.email,
+                hintText: t.auth.email,
                 suffixIcon: Icons.check,
               ),
               TextFormFieldWidget(
-                hintText: AppStrings.password,
+                hintText: t.auth.password,
                 obscureText: !isPasswordVisible,
                 suffixIcon: isPasswordVisible
                     ? Icons.visibility
@@ -41,15 +41,15 @@ class _SignInScreenState extends State<SignInScreen> {
                 }),
               ),
             ],
-            textButton: AppStrings.login,
+            textButton: t.auth.login,
             onPressed: () {
               //button action login
             },
             linkPressed: () {
               Navigator.pushNamed(context, AppRoute.register);
             },
-            linkText: AppStrings.dontHaveAccount,
-            forgotPasswordText: AppStrings.forgotPassword,
+            linkText: t.auth.dontHaveAccount,
+            forgotPasswordText: t.auth.forgotPassword,
             forgotPasswordAction: () {
               showModalBottomSheet(
                 backgroundColor: AppColors.white,
@@ -58,15 +58,15 @@ class _SignInScreenState extends State<SignInScreen> {
                   return AuthWidget(
                     // paddingLeft: 100,
                     googleSignInEnabled: false,
-                    title: AppStrings.forgotPassword,
-                    subtitle: AppStrings.verificationMessage,
-                    textFields: const [
+                    title: t.auth.forgotPassword,
+                    subtitle: t.auth.verificationMessage,
+                    textFields:  [
                       TextFormFieldWidget(
-                        hintText: AppStrings.email,
+                        hintText: t.auth.email,
                         suffixIcon: Icons.check,
                       ),
                     ],
-                    textButton: AppStrings.continueText,
+                    textButton: t.common.continueText,
                     onPressed: () {
                       showModalBottomSheet(
                         backgroundColor: AppColors.white,
@@ -75,10 +75,10 @@ class _SignInScreenState extends State<SignInScreen> {
                           return AuthWidget(
                             // paddingLeft: 100,
                             googleSignInEnabled: false,
-                            title: AppStrings.enterDigitsCode,
-                            subtitle: AppStrings.enterCodeMessage,
+                            title: t.auth.enterDigitsCode,
+                            subtitle: t.auth.enterCodeMessage,
                             textFields: const [],
-                            textButton: AppStrings.continueText,
+                            textButton: t.common.continueText,
                             onPressed: () {
                               showModalBottomSheet(
                                 backgroundColor: AppColors.white,

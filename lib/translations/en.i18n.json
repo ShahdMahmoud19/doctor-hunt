@@ -1,0 +1,37 @@
+{
+  "common": {
+    "appName": "Doctor Hunt",
+    "continueText": "Continue",
+    "next": "Next",
+    "skip": "Skip"
+  },
+  "auth": {
+    "welcomeMessage": "Welcome to Doctor Hunt!",
+    "name": "Name",
+    "email": "Email",
+    "password": "New Password",
+    "confirmPassword": "Re-enter Password",
+    "privacyPolicy": "I agree with the Terms of Service & Privacy Policy",
+    "forgotPassword": "Forgot Password",
+    "signUpTitle": "Join us to start searching",
+    "signUpSubtitle": "You can search course, apply course and find scholarship for abroad studies",
+    "signInTitle": "Welcome back",
+    "login": "Login",
+    "signup": "Sign up",
+    "haveAccount": "Have an account? Log in",
+    "dontHaveAccount": "Don’t have an account? Join us",
+    "verificationMessage": "Enter your email for the verification process, we will send 4 digits code to your email.",
+    "enterCodeMessage": "Enter the 4 digits code that you received on your email.",
+    "enterDigitsCode": "Enter 4 Digits Code",
+    "setNewPassword": "Set the new password for your account so you can login and access all the features.",
+    "resetPassword": "Reset Password",
+    "updatePassword": "Update Password"
+  },
+  "onboarding": {
+    "title1": "Find Trusted Doctors",
+    "title2": "Connect with Experts",
+    "title3": "Easy Appointments",
+    "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.",
+    "getStarted": "Get Started"
+  }
+}

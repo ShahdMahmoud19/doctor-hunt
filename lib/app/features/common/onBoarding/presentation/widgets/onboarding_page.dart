@@ -1,10 +1,10 @@
 import 'package:doctor_hunt/app/core/themes/app_colors.dart';
+import 'package:doctor_hunt/app/features/common/onBoarding/data/models/onboarding_model.dart';
 import 'package:doctor_hunt/generated/style_atoms.dart';
 import 'package:flutter/material.dart';
-import '../../data/onboarding_data.dart';
 
 class OnboardingPage extends StatelessWidget {
-  final OnboardingData data;
+  final OnboardingModel data;
 
   const OnboardingPage({super.key, required this.data});
 

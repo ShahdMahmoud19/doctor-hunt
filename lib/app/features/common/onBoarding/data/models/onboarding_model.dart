@@ -1,14 +1,14 @@
-import 'package:doctor_hunt/app/core/utils/app_string.dart';
 import 'package:doctor_hunt/app/core/utils/image_assets.dart';
+import 'package:doctor_hunt/translations/strings.g.dart';
 
-class OnboardingData {
+class OnboardingModel {
   final String title;
   final String description;
   final String imagePath;
   final double? positionRight;
   final double? positionLeft;
 
-  OnboardingData({
+  OnboardingModel({
     required this.title,
     required this.description,
     required this.imagePath,
@@ -17,24 +17,24 @@ class OnboardingData {
   });
 }
 
-List<OnboardingData> onboardingDataList = [
-  OnboardingData(
-    title: AppStrings.onboardingTitle1,
-    description: AppStrings.onboardingDescription,
+List<OnboardingModel> getOnboardingDataList(Translations t) => [
+  OnboardingModel(
+    title: t.onboarding.title1,
+    description: t.onboarding.description,
     imagePath: ImageAssets.onboarding1,
     positionRight: 180,
     positionLeft: null,
   ),
-  OnboardingData(
-    title: AppStrings.onboardingTitle2,
-    description: AppStrings.onboardingDescription,
+  OnboardingModel(
+    title: t.onboarding.title2,
+    description: t.onboarding.description,
     imagePath: ImageAssets.onboarding2,
     positionRight: null,
     positionLeft: 180,
   ),
-  OnboardingData(
-    title: AppStrings.onboardingTitle3,
-    description: AppStrings.onboardingDescription,
+  OnboardingModel(
+    title: t.onboarding.title3,
+    description: t.onboarding.description,
     imagePath: ImageAssets.onboarding3,
     positionRight: 180,
     positionLeft: null,

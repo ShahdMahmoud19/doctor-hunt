@@ -1,6 +1,7 @@
-import 'package:doctor_hunt/app/features/auth/presentation/screens/sign_in_screen.dart';
-import 'package:doctor_hunt/app/features/auth/presentation/screens/sign_up_screen.dart';
-import 'package:doctor_hunt/app/features/onBoarding/presentation/screens/onboarding_screen.dart';
+import 'package:doctor_hunt/app/features/common/auth/presentation/screens/sign_in_screen.dart';
+import 'package:doctor_hunt/app/features/common/auth/presentation/screens/sign_up_screen.dart';
+import 'package:doctor_hunt/app/features/common/onBoarding/presentation/screens/onboarding_screen.dart';
+import 'package:doctor_hunt/app/features/home/presentation/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRoute {
@@ -16,8 +17,8 @@ class AppRoute {
         return MaterialPageRoute(builder: (_) => const SignUpScreen());
       case onboarding:
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
-      // case home:
-      //   return MaterialPageRoute(builder: (_) => const HomeScreen());
+      case home:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

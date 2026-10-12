@@ -1,9 +1,9 @@
 import 'package:doctor_hunt/app/core/router/app_route.dart';
-import 'package:doctor_hunt/app/core/utils/app_string.dart';
 import 'package:doctor_hunt/app/core/widgets/app_background.dart';
 import 'package:doctor_hunt/app/core/widgets/text_form_field_widget.dart';
-import 'package:doctor_hunt/app/features/auth/presentation/widgets/auth_widget.dart';
-import 'package:doctor_hunt/app/features/auth/presentation/widgets/check_box_widget.dart';
+import 'package:doctor_hunt/app/features/common/auth/presentation/widgets/auth_widget.dart';
+import 'package:doctor_hunt/app/features/common/auth/presentation/widgets/check_box_widget.dart';
+import 'package:doctor_hunt/translations/strings.g.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -23,13 +23,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
         child: Center(
           child: AuthWidget(
            // paddingLeft: 40,
-            title: AppStrings.signUpTitle,
-            subtitle: AppStrings.signUpSubtitle,
+            title: t.auth.signUpTitle,
+            subtitle: t.auth.signUpSubtitle,
             textFields: [
-              TextFormFieldWidget(hintText: AppStrings.name),
-              TextFormFieldWidget(hintText: AppStrings.email),
+              TextFormFieldWidget(hintText: t.auth.name),
+              TextFormFieldWidget(hintText: t.auth.email),
               TextFormFieldWidget(
-                hintText: AppStrings.password,
+                hintText: t.auth.password,
                 obscureText: !isPasswordVisible,
                 suffixIcon: isPasswordVisible
                     ? Icons.visibility
@@ -39,15 +39,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 }),
               ),
             ],
-            textButton: AppStrings.signup,
+            textButton: t.auth.signup,
             privcyPolicy: CheckBoxWidget(),
             onPressed: () {
-              //button action signup
+              Navigator.pushReplacementNamed(context, AppRoute.home);
             },
             linkPressed: () {
               Navigator.pushNamed(context, AppRoute.login);
             },
-            linkText: AppStrings.haveAccount,
+            linkText: t.auth.haveAccount,
           ),
         ),
       ),
