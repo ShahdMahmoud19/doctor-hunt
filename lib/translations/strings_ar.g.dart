@@ -39,6 +39,7 @@ class TranslationsAr with BaseTranslations<AppLocale, Translations> implements T
 
 	// Translations
 	@override late final _Translations$common$ar common = _Translations$common$ar._(_root);
+	@override late final _Translations$role$ar role = _Translations$role$ar._(_root);
 	@override late final _Translations$auth$ar auth = _Translations$auth$ar._(_root);
 	@override late final _Translations$onboarding$ar onboarding = _Translations$onboarding$ar._(_root);
 }
@@ -54,6 +55,21 @@ class _Translations$common$ar implements Translations$common$en {
 	@override String get continueText => 'متابعة';
 	@override String get next => 'التالي';
 	@override String get skip => 'تخطي';
+}
+
+// Path: role
+class _Translations$role$ar implements Translations$role$en {
+	_Translations$role$ar._(this._root);
+
+	final TranslationsAr _root; // ignore: unused_field
+
+	// Translations
+	@override String get chooseRole => 'اختر دورك';
+	@override String get subTitle => 'الدور الذي تختاره يحدد التجربة والميزات المتاحة.';
+	@override String get patient => 'مريض';
+	@override String get patientSub => 'ابحث عن الأطباء، واحجز\nالمواعيد،\nوأدر سجلاتك الطبية.';
+	@override String get admin => 'مسؤول';
+	@override String get adminSub => 'أدر الأطباء والمواعيد والمستخدمين والمنصة.';
 }
 
 // Path: auth
@@ -83,6 +99,19 @@ class _Translations$auth$ar implements Translations$auth$en {
 	@override String get setNewPassword => 'عيّن كلمة مرور جديدة لحسابك لتتمكن من تسجيل الدخول والاستفادة من كل المميزات.';
 	@override String get resetPassword => 'إعادة تعيين كلمة المرور';
 	@override String get updatePassword => 'تحديث كلمة المرور';
+	@override String get nameRequired => 'الاسم مطلوب';
+	@override String get emailRequired => 'البريد الإلكتروني مطلوب';
+	@override String get invalidEmail => 'أدخل بريدًا إلكترونيًا صالحًا';
+	@override String get passwordRequired => 'كلمة المرور مطلوبة';
+	@override String get adminSignIn => 'تسجيل دخول المسؤول';
+	@override String get adminSignInSubtitle => 'سجّل الدخول لإدارة Doctor Hunt';
+	@override String get signingIn => 'جارٍ تسجيل الدخول...';
+	@override String get adminLoginSuccess => 'تم تسجيل دخول المسؤول بنجاح.';
+	@override String get adminAccessDenied => 'تم رفض الوصول. هذا الحساب ليس حساب مسؤول.';
+	@override String get enterEmailAndPassword => 'من فضلك أدخل بريدك الإلكتروني وكلمة المرور.';
+	@override String get creatingAccount => 'جارٍ إنشاء الحساب...';
+	@override String get accountCreatedConfirmEmail => 'تم إنشاء الحساب! من فضلك تحقق من بريدك الإلكتروني لتأكيده.';
+	@override String get accountCreated => 'تم إنشاء الحساب بنجاح!';
 }
 
 // Path: onboarding
@@ -111,6 +140,12 @@ extension on TranslationsAr {
 			'common.continueText' => 'متابعة',
 			'common.next' => 'التالي',
 			'common.skip' => 'تخطي',
+			'role.chooseRole' => 'اختر دورك',
+			'role.subTitle' => 'الدور الذي تختاره يحدد التجربة والميزات المتاحة.',
+			'role.patient' => 'مريض',
+			'role.patientSub' => 'ابحث عن الأطباء، واحجز\nالمواعيد،\nوأدر سجلاتك الطبية.',
+			'role.admin' => 'مسؤول',
+			'role.adminSub' => 'أدر الأطباء والمواعيد والمستخدمين والمنصة.',
 			'auth.welcomeMessage' => 'أهلاً بك في Doctor Hunt!',
 			'auth.name' => 'الاسم',
 			'auth.email' => 'البريد الإلكتروني',
@@ -131,6 +166,19 @@ extension on TranslationsAr {
 			'auth.setNewPassword' => 'عيّن كلمة مرور جديدة لحسابك لتتمكن من تسجيل الدخول والاستفادة من كل المميزات.',
 			'auth.resetPassword' => 'إعادة تعيين كلمة المرور',
 			'auth.updatePassword' => 'تحديث كلمة المرور',
+			'auth.nameRequired' => 'الاسم مطلوب',
+			'auth.emailRequired' => 'البريد الإلكتروني مطلوب',
+			'auth.invalidEmail' => 'أدخل بريدًا إلكترونيًا صالحًا',
+			'auth.passwordRequired' => 'كلمة المرور مطلوبة',
+			'auth.adminSignIn' => 'تسجيل دخول المسؤول',
+			'auth.adminSignInSubtitle' => 'سجّل الدخول لإدارة Doctor Hunt',
+			'auth.signingIn' => 'جارٍ تسجيل الدخول...',
+			'auth.adminLoginSuccess' => 'تم تسجيل دخول المسؤول بنجاح.',
+			'auth.adminAccessDenied' => 'تم رفض الوصول. هذا الحساب ليس حساب مسؤول.',
+			'auth.enterEmailAndPassword' => 'من فضلك أدخل بريدك الإلكتروني وكلمة المرور.',
+			'auth.creatingAccount' => 'جارٍ إنشاء الحساب...',
+			'auth.accountCreatedConfirmEmail' => 'تم إنشاء الحساب! من فضلك تحقق من بريدك الإلكتروني لتأكيده.',
+			'auth.accountCreated' => 'تم إنشاء الحساب بنجاح!',
 			'onboarding.title1' => 'اعثر على أطباء موثوقين',
 			'onboarding.title2' => 'تواصل مع الخبراء',
 			'onboarding.title3' => 'مواعيد سهلة',

@@ -4,6 +4,13 @@
     "continueText": "متابعة",
     "next": "التالي",
     "skip": "تخطي"
+  },"role": {
+    "chooseRole": "اختر دورك",
+    "subTitle": "الدور الذي تختاره يحدد التجربة والميزات المتاحة.",
+    "patient": "مريض",
+    "patientSub": "ابحث عن الأطباء، واحجز\nالمواعيد،\nوأدر سجلاتك الطبية.",
+    "admin": "مسؤول",
+    "adminSub": "أدر الأطباء والمواعيد والمستخدمين والمنصة."
   },
   "auth": {
     "welcomeMessage": "أهلاً بك في Doctor Hunt!",
@@ -25,7 +32,20 @@
     "enterDigitsCode": "أدخل الرمز المكون من 4 أرقام",
     "setNewPassword": "عيّن كلمة مرور جديدة لحسابك لتتمكن من تسجيل الدخول والاستفادة من كل المميزات.",
     "resetPassword": "إعادة تعيين كلمة المرور",
-    "updatePassword": "تحديث كلمة المرور"
+    "updatePassword": "تحديث كلمة المرور",
+     "nameRequired": "الاسم مطلوب",
+  "emailRequired": "البريد الإلكتروني مطلوب",
+  "invalidEmail": "أدخل بريدًا إلكترونيًا صالحًا",
+  "passwordRequired": "كلمة المرور مطلوبة",
+  "adminSignIn": "تسجيل دخول المسؤول",
+  "adminSignInSubtitle": "سجّل الدخول لإدارة Doctor Hunt",
+  "signingIn": "جارٍ تسجيل الدخول...",
+  "adminLoginSuccess": "تم تسجيل دخول المسؤول بنجاح.",
+  "adminAccessDenied": "تم رفض الوصول. هذا الحساب ليس حساب مسؤول.",
+  "enterEmailAndPassword": "من فضلك أدخل بريدك الإلكتروني وكلمة المرور.",
+    "creatingAccount": "جارٍ إنشاء الحساب...",
+  "accountCreatedConfirmEmail": "تم إنشاء الحساب! من فضلك تحقق من بريدك الإلكتروني لتأكيده.",
+  "accountCreated": "تم إنشاء الحساب بنجاح!"
   },
   "onboarding": {
     "title1": "اعثر على أطباء موثوقين",

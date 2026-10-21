@@ -4,6 +4,13 @@
     "continueText": "Continue",
     "next": "Next",
     "skip": "Skip"
+  },"role": {
+    "chooseRole": "Choose your role",
+    "subTitle": "The selected role determines the experience and available features.",
+    "patient": "Patient",
+    "patientSub": "Find doctors, book\nappointments,\nand manage your medical\nrecords.",
+    "admin":"Admin",
+    "adminSub":"Manage doctors, appointments,users, and the platform."
   },
   "auth": {
     "welcomeMessage": "Welcome to Doctor Hunt!",
@@ -25,7 +32,20 @@
     "enterDigitsCode": "Enter 4 Digits Code",
     "setNewPassword": "Set the new password for your account so you can login and access all the features.",
     "resetPassword": "Reset Password",
-    "updatePassword": "Update Password"
+    "updatePassword": "Update Password",
+     "nameRequired": "Name is required",
+  "emailRequired": "Email is required",
+  "invalidEmail": "Enter a valid email",
+  "passwordRequired": "Password is required",
+  "adminSignIn": "Admin Sign In",
+  "adminSignInSubtitle": "Sign in to manage Doctor Hunt",
+  "signingIn": "Signing in...",
+  "adminLoginSuccess": "Admin login successful.",
+  "adminAccessDenied": "Access denied. This account is not an administrator.",
+  "enterEmailAndPassword": "Please enter your email and password.",
+  "creatingAccount": "Creating account...",
+  "accountCreatedConfirmEmail": "Account created! Please check your email to confirm it.",
+  "accountCreated": "Account created successfully!"
   },
   "onboarding": {
     "title1": "Find Trusted Doctors",

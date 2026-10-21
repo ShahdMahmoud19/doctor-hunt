@@ -42,6 +42,7 @@ class Translations with BaseTranslations<AppLocale, Translations> {
 
 	// Translations
 	late final Translations$common$en common = Translations$common$en._(_root);
+	late final Translations$role$en role = Translations$role$en._(_root);
 	late final Translations$auth$en auth = Translations$auth$en._(_root);
 	late final Translations$onboarding$en onboarding = Translations$onboarding$en._(_root);
 }
@@ -65,6 +66,33 @@ class Translations$common$en {
 
 	/// en: 'Skip'
 	String get skip => 'Skip';
+}
+
+// Path: role
+class Translations$role$en {
+	Translations$role$en._(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Choose your role'
+	String get chooseRole => 'Choose your role';
+
+	/// en: 'The selected role determines the experience and available features.'
+	String get subTitle => 'The selected role determines the experience and available features.';
+
+	/// en: 'Patient'
+	String get patient => 'Patient';
+
+	/// en: 'Find doctors, book appointments, and manage your medical records.'
+	String get patientSub => 'Find doctors, book\nappointments,\nand manage your medical\nrecords.';
+
+	/// en: 'Admin'
+	String get admin => 'Admin';
+
+	/// en: 'Manage doctors, appointments,users, and the platform.'
+	String get adminSub => 'Manage doctors, appointments,users, and the platform.';
 }
 
 // Path: auth
@@ -134,6 +162,45 @@ class Translations$auth$en {
 
 	/// en: 'Update Password'
 	String get updatePassword => 'Update Password';
+
+	/// en: 'Name is required'
+	String get nameRequired => 'Name is required';
+
+	/// en: 'Email is required'
+	String get emailRequired => 'Email is required';
+
+	/// en: 'Enter a valid email'
+	String get invalidEmail => 'Enter a valid email';
+
+	/// en: 'Password is required'
+	String get passwordRequired => 'Password is required';
+
+	/// en: 'Admin Sign In'
+	String get adminSignIn => 'Admin Sign In';
+
+	/// en: 'Sign in to manage Doctor Hunt'
+	String get adminSignInSubtitle => 'Sign in to manage Doctor Hunt';
+
+	/// en: 'Signing in...'
+	String get signingIn => 'Signing in...';
+
+	/// en: 'Admin login successful.'
+	String get adminLoginSuccess => 'Admin login successful.';
+
+	/// en: 'Access denied. This account is not an administrator.'
+	String get adminAccessDenied => 'Access denied. This account is not an administrator.';
+
+	/// en: 'Please enter your email and password.'
+	String get enterEmailAndPassword => 'Please enter your email and password.';
+
+	/// en: 'Creating account...'
+	String get creatingAccount => 'Creating account...';
+
+	/// en: 'Account created! Please check your email to confirm it.'
+	String get accountCreatedConfirmEmail => 'Account created! Please check your email to confirm it.';
+
+	/// en: 'Account created successfully!'
+	String get accountCreated => 'Account created successfully!';
 }
 
 // Path: onboarding
@@ -172,6 +239,12 @@ extension on Translations {
 			'common.continueText' => 'Continue',
 			'common.next' => 'Next',
 			'common.skip' => 'Skip',
+			'role.chooseRole' => 'Choose your role',
+			'role.subTitle' => 'The selected role determines the experience and available features.',
+			'role.patient' => 'Patient',
+			'role.patientSub' => 'Find doctors, book\nappointments,\nand manage your medical\nrecords.',
+			'role.admin' => 'Admin',
+			'role.adminSub' => 'Manage doctors, appointments,users, and the platform.',
 			'auth.welcomeMessage' => 'Welcome to Doctor Hunt!',
 			'auth.name' => 'Name',
 			'auth.email' => 'Email',
@@ -192,6 +265,19 @@ extension on Translations {
 			'auth.setNewPassword' => 'Set the new password for your account so you can login and access all the features.',
 			'auth.resetPassword' => 'Reset Password',
 			'auth.updatePassword' => 'Update Password',
+			'auth.nameRequired' => 'Name is required',
+			'auth.emailRequired' => 'Email is required',
+			'auth.invalidEmail' => 'Enter a valid email',
+			'auth.passwordRequired' => 'Password is required',
+			'auth.adminSignIn' => 'Admin Sign In',
+			'auth.adminSignInSubtitle' => 'Sign in to manage Doctor Hunt',
+			'auth.signingIn' => 'Signing in...',
+			'auth.adminLoginSuccess' => 'Admin login successful.',
+			'auth.adminAccessDenied' => 'Access denied. This account is not an administrator.',
+			'auth.enterEmailAndPassword' => 'Please enter your email and password.',
+			'auth.creatingAccount' => 'Creating account...',
+			'auth.accountCreatedConfirmEmail' => 'Account created! Please check your email to confirm it.',
+			'auth.accountCreated' => 'Account created successfully!',
 			'onboarding.title1' => 'Find Trusted Doctors',
 			'onboarding.title2' => 'Connect with Experts',
 			'onboarding.title3' => 'Easy Appointments',
