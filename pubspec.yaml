@@ -39,6 +39,9 @@ dependencies:
   slang_flutter: ^4.19.0
   flutter_localizations:
     sdk: flutter
+  supabase_flutter: ^2.18.3
+  flutter_bloc: ^9.1.1
+  gap: ^3.0.1
 
 dev_dependencies:
   flutter_test:

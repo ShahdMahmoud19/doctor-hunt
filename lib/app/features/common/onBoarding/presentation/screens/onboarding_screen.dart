@@ -29,7 +29,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 
   void finishOnboarding() {
-    Navigator.pushReplacementNamed(context, AppRoute.login);
+    Navigator.pushReplacementNamed(context, AppRoute.chooseRole);
   }
 
   @override
