@@ -13,7 +13,7 @@ abstract class AppColors {
 
   // Darker green from Figma
   static const Color primaryDark = Color(0xFF07D9AD);
-
+  static const Color lightGreen = Color.fromARGB(255, 240, 249, 246);
   // =========================
   // Secondary
   // =========================
@@ -72,4 +72,8 @@ abstract class AppColors {
 
   // Figma: #61CEFFB8 → 72% opacity
   static const Color backgroundBlue = Color(0xFF61CEFF);
+
+  static const Color grey=Colors.grey;
+
+  static const Color lightGrey=const Color.fromARGB(255, 224, 221, 221);
 }
